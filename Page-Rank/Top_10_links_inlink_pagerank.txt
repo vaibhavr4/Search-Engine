@@ -1,0 +1,48 @@
+---------Sorted top 10 of BFS based on inlinks:----------------------
+ ('International_Standard_Book_Number', 433)
+ ('Tropical_cyclone', 355)
+ ('Digital_object_identifier', 353)
+ ('Bibcode', 245)
+ ('Wayback_Machine', 244)
+ ('National_Oceanic_and_Atmospheric_Administration', 222)
+ ('Extratropical_cyclone', 202)
+ ('National_Hurricane_Center', 199)
+ ('Pascal_(unit)', 191)
+ ('Storm_surge', 190)
+
+---------Sorted top 10 of DFS based on inlinks:-----------------------
+ ('London_Underground', 724)
+ ('Transport_for_London', 629)
+ ('International_Standard_Book_Number', 548)
+ ('National_Rail', 543)
+ ('Docklands_Light_Railway', 470)
+ ('Crossrail', 413)
+ ('List_of_London_Underground_stations', 386)
+ ('Finsbury_Park_station', 383)
+ ('Richmond_(London)_station', 375)
+ ('Liverpool_Street_station', 361)
+
+---------Sorted top 10 of BFS based on Page Rank:---------------------
+('International_Standard_Book_Number', 0.04050106767841884)
+('Digital_object_identifier', 0.03171646647370827)
+('International_Standard_Serial_Number', 0.023997536999154998)
+('National_Diet_Library', 0.017579139335209486)
+('Bibcode', 0.01474360539203124)
+('PubMed_Identifier', 0.013668678754709732)
+('Canada', 0.012639695162139357)
+('World_War_II', 0.011871815548506155)
+('Japan', 0.010792191706206898)
+('Wayback_Machine', 0.010554851594258155)
+
+----------Sorted top 10 of DFS based on Page Rank:---------------------
+('International_Standard_Book_Number', 0.035159715613522685)
+('Digital_object_identifier', 0.01847924104210558)
+('Canada', 0.012166853503715767)
+('DMOZ', 0.009863649950645929)
+('European_Union', 0.009105989585477554)
+('London_Underground', 0.008648956169418319)
+('PubMed_Identifier', 0.008539112375304587)
+('World_War_II', 0.008094244250303596)
+('Amazon_Standard_Identification_Number', 0.008087985901023763)
+('Transport_for_London', 0.007776592833770986)
+

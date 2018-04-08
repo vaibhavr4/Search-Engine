@@ -1,0 +1,11 @@
+G1:
+Total number of pages :1000
+No. of links that has no inlink: 0
+No. of sink nodes : 67
+Proportion of no in link and no out link : 0
+
+G2:
+Total number of pages :1000
+No. of links that has no inlink: 1
+No. of sink nodes: 14
+Proporion of no in links and no out links : 0.0714 (7.14%)
