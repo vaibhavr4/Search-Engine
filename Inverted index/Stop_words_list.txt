@@ -1,0 +1,95 @@
+Stop words are the words that are most common and dont have any contribution in finding the document.
+Removing common words from stream of tokens or index terms is known as Stopping.
+Stop words vary based on the language, in English stop words are nothing but functional words
+that help form a sentence.
+Such words can be removed from the vocabulary in order to 
+save disk space and also to get rid of the overhead to traverse through those 
+words during search process.
+The Stop words list are generated as below:
+
+	1. Generate a term frequency table from a given corpus, where the 
+           occurence for each term is mentioned.
+	2. Sort the term frequency in a descending order such that terms 
+           with maximum number of occurence appear at the top.
+	3. Scan through the terms from top and based on the relevance of the 
+           terms in respect to the topical content, choose a threshold value.
+	4. Make a stoplist of terms till that threshold.
+	5. Filter the stoplist to remove the terms which are related to the 
+	   topical content.
+	   
+STOP WORDS LIST:
+------------------------------------------------------------------------------------------------------------	   
+the:75125
+of:44871
+and:32488
+a:25777
+in:25076
+to:19521
+s:12265
+e:11781
+is:9761
+on:9521
+for:8087
+t:7826
+hurricane:7769
+as:7284
+by:7157
+from:7088
+was:6193
+r:6167
+i:5980
+n:5896
+with:5874
+o:5394
+tropical:5220
+at:4912
+1:4640
+c:4624
+that:4620
+it:4237
+are:4132
+storm:4095
+l:4028
+h:3850
+or:3722
+retrieved:3607
+d:3590
+an:3550
+new:3397
+this:3383
+u:3358
+2:3310
+also:3291
+states:3199
+were:3178
+v:3096
+m:3092
+which:2990
+be:2961
+p:2907
+
+The cut off value for the stop list is set as 47 which includes the top 47 most frequent words
+in the documents crawled. 4 of the words from the above stop list can be filtered out since
+they are directly associated with the contents. The 4 words are;
+
+hurricane:7769 (Total term frequency)
+tropical:5220 (Total term frequency)
+storm:4095 (Total term frequency)
+retrieved:3607 (Total term frequency)
+
+JUSTIFICATION AND COMMENTS:
+-------------------------------------------------------------------------------------------------------------
+
+The stop list is set to a size or cut off value of 47 since the words occuring after this cut off value
+have more relevance to the documents or topical content. Though increasing the cut off value might
+reduce the overhead time,doing so may eliminate the words which can be used as keywords for searching 
+a particular document. For instance, setting a cut off value to 60 will include many words that have more
+relevance to the document. 
+If we have to filter by hand only 4 words get added to stop list, which are 
+'3','4','5','b', while the remaining words have to be filtered out. Since ging further down the term 
+frequency list may increase the probability of words that are more relevant to the document, the cut off 
+value has been set to 47 with 4 words mentioned above filtered, which makes the stop list to consist of
+43 words.
+The 43 words are just functional words such as 'the','of','and','a','in' which just help complete a
+sentence and are common in all or most of the documents and hold no key importance while searching for a
+document by keyword.
