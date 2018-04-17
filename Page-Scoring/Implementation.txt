@@ -1,0 +1,32 @@
+Task1:
+
+Task1 has been implemented with the given Lucene code construct in Java.
+The output file format has been modified as required as it differs from the
+standard format and also the queries have been fed into a "query_file.txt" from
+which the queries are fetched and documents are ranked based on the Lucene construct.
+
+The set of parsed documents are also given as input which was generated as part
+of HW3- Task1 and is inside the "parsed_docs" folder.
+
+
+Task2:
+
+In Task2 the documents are ranked based on BM25 algorithm for the queries
+submitted.
+The unigram_index file generated as part of HW3-Task2 is given as input.
+The queries are parsed into a data structure readable in python and also
+the length of each parsed document generated as part of HW3 is fed as input.
+
+For each term in the query the BM25 scoring function is applied and the scores
+are generated for all documents.
+The steps for retrieval are as given:
+
+1  Fetch all inverted lists corresponding to terms in a query.
+2  Compute BM25 scores for documents in the lists. Make a score list for documents
+   in the inverted lists.
+3  Accumulate scores for each term in a query on the score list.
+4  Assume that no relevance information is available.
+5  For parameters,use k1=1.2, b=0.75, k2=100.
+6  Sort the documents by the BM25 scores.
+
+
